@@ -82,6 +82,19 @@ public class DialogContent extends Parent {
     @FindBy(css = "button[class='tds-btn']")
     private WebElement placeReservationButton;
 
+    //---------------Orcun112-----------------------//
+    @FindBy(xpath = "//span[text()='Model 3']")
+    public WebElement VerifyWebpageWhetherEnter;
+
+    @FindBy(xpath = "//span[text()='Model 3']")
+    private WebElement clickinModel3;
+
+    @FindBy(xpath ="(//span[text()='Order Now'])[1]")
+    public WebElement clickOrder;
+
+    @FindBy(xpath = "//h1[text()='404']")
+    public WebElement codeError;
+
 
     WebElement myElement;
 
@@ -97,7 +110,9 @@ public class DialogContent extends Parent {
             case "companyNameInput": myElement = companyNameInput;break;
             case "installationAddressInput": myElement = installationAddressInput;break;
 
-
+                //***********orcun***********//
+            case "clickinModel3":myElement=clickinModel3;break;
+            case "clickOrder":myElement=clickOrder;break;
 
         }
 
@@ -142,6 +157,10 @@ public class DialogContent extends Parent {
             case "produceVerify":  myElement = produceVerify;   break;
             case "priceSummaryVerify":  myElement = priceSummaryVerify;   break;
             case "yourContactVerify":  myElement = yourContactVerify;   break;
+
+            //*********orcun*************///
+            case "VerifyWebpageWhetherEnter":myElement=VerifyWebpageWhetherEnter;break;
+            case "codeError":myElement=codeError;break;
 
         }
 
