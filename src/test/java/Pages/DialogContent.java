@@ -82,7 +82,7 @@ public class DialogContent extends Parent {
     @FindBy(css = "button[class='tds-btn']")
     private WebElement placeReservationButton;
 
-    //---------------Orcun112-----------------------//
+    //--------------Orcun112-----------------------//
     @FindBy(xpath = "//span[text()='Model 3']")
     public WebElement VerifyWebpageWhetherEnter;
 
