@@ -110,7 +110,7 @@ public class DialogContent extends Parent {
             case "companyNameInput": myElement = companyNameInput;break;
             case "installationAddressInput": myElement = installationAddressInput;break;
 
-                //***********orcun***********//
+                //***********orcun**********//
             case "clickinModel3":myElement=clickinModel3;break;
             case "clickOrder":myElement=clickOrder;break;
 

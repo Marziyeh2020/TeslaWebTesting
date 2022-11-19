@@ -22,14 +22,12 @@ public class CheckTheFunctionalities {
         wait.until(ExpectedConditions.elementToBeClickable(dc.clickOrder));
         dc.findAndClick("clickOrder");
 
-
     }
     @Then("Validate the scenario in terms of issue")
     public void validateTheScenarioInTermsOfissue() {
         wait.until(ExpectedConditions.visibilityOf(dc.codeError));
         Assert.assertTrue(dc.codeError.getText().contains("404"));
         System.out.println("WebSite Error is correct / The Test has been Past");
-
         GWD.Bekle(5);
 
 
