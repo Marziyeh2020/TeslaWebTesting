@@ -44,7 +44,7 @@ public class Parent {
     }
 
     public void verifyContainsText(WebElement element, String text)
-    {
+    {   scrollToElement(element);
         waitUntilVisible(element);
         Assert.assertTrue(element.getText().toLowerCase().contains(text.toLowerCase()));
     }
